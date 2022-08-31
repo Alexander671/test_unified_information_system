@@ -48,7 +48,7 @@ The 'Account' user collection contains documents.
 There are two data tables: accrual and payment. Both collections have fields:
 - id
 - date (date)
-- month (month)
+- month (month) <p>
 It is necessary to write a function that will make a request for payments and find for each payment the debt that will be paid by them. A payment can only pay off a debt that has an earlier date. One payment can only pay one debt, and each debt can only be paid in one payment. The payment must first select a debt with the same month (field month). If there is none, then the oldest by date (date field) debt.The result should be a table of found matches, as well as a list of payments that did not find a debt.
 
 ### Tested
